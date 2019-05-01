@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DSE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_blah_blah">BlahBlah</string>
+</resources>
