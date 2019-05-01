@@ -30,7 +30,17 @@
         android:layout_weight="1"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Change"
+        android:text="CP"
+        android:textSize="12sp"></TextView>
+
+    <TextView
+        android:id="@+id/ycp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="YCP"
         android:textSize="12sp"></TextView>
 
     <TextView
@@ -39,7 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:padding="10dp"
-        android:text="%Change"
-        android:textSize="12sp"></TextView>
+        android:padding="5dp"
+        android:text="%Chg"
+        android:textColor="#FF5F5F5F"
+        android:textSize="15sp"></TextView>
+
 </LinearLayout>

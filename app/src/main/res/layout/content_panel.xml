@@ -80,7 +80,19 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Change"
+            android:text="CP"
+            android:textColor="#FF5F5F5F"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/ycp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="YCP"
             android:textColor="#FF5F5F5F"
             android:textSize="15sp"
             android:textStyle="bold"></TextView>
@@ -92,7 +104,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="%Change"
+            android:text="%Chg"
             android:textColor="#FF5F5F5F"
             android:textSize="15sp"
             android:textStyle="bold"></TextView>
@@ -105,5 +117,7 @@
         android:layout_below="@+id/relativeLayout1"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp" />
+
+
 
 </RelativeLayout>

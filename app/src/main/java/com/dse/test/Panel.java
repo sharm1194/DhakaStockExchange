@@ -113,8 +113,10 @@ public class Panel extends AppCompatActivity {
 
 //                        // Phone
 //                        JSONObject phone = c.getJSONObject("CHANGE");
-                        String mobile = c.getString("CHANGE");
-                        String change_percent = c.getString("CHANGE_PERCENT");
+                        String mobile = c.getString("CLOSEP");
+                        String ycp = c.getString("YCP");
+                        String change_percent = c.getString("CHANGE");
+
 
                         float change_percent_temp = Float.valueOf(change_percent);
                         DecimalFormat decimalFormat = new DecimalFormat("#.##");
@@ -129,7 +131,10 @@ public class Panel extends AppCompatActivity {
                         contact.put("name", name);
                         contact.put("email", email);
                         contact.put("mobile", mobile);
+                        contact.put("ycp", ycp);
                         contact.put("change_percent", real_change_percent);
+
+
 
                         // adding contact to contact list
                         contactJsonList.add(contact);
@@ -177,8 +182,8 @@ public class Panel extends AppCompatActivity {
             final SimpleAdapter adapter = new SimpleAdapter(
                     Panel.this, contactJsonList,
                     R.layout.list_item, new String[]{"name", "email",
-                    "mobile","change_percent"}, new int[]{R.id.name,
-                    R.id.email, R.id.mobile, R.id.change_percent});
+                    "mobile","ycp","change_percent"}, new int[]{R.id.name,
+                    R.id.email, R.id.mobile, R.id.ycp, R.id.change_percent});
 
             listView.setAdapter(adapter);
 
