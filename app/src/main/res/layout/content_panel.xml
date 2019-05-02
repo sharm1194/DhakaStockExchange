@@ -56,7 +56,7 @@
             android:layout_marginLeft="5dp"
             android:layout_weight="1.5"
             android:padding="5dp"
-            android:text="Treding Code"
+            android:text="Trading Code"
             android:textColor="#FF5F5F5F"
             android:textSize="15sp"
             android:textStyle="bold"></TextView>
