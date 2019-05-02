@@ -39,7 +39,16 @@ public class MainActivity extends AppCompatActivity implements TextWatcher,
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openActivity2();
+                if (etUsername.length()==0){
+                    etUsername.setError("please enter your name here");
+                } else if (etPass.length()==0){
+                    etPass.setError("please enter password");
+
+                } else
+                {
+                    openActivity2();
+                }
+
             }
         });
 
@@ -64,8 +73,12 @@ public class MainActivity extends AppCompatActivity implements TextWatcher,
     }
 
     public void openActivity2(){
-        Intent intent = new Intent(this,Panel.class);
-        startActivity(intent);
+
+
+            Intent intent = new Intent(this,Panel.class);
+            startActivity(intent);
+
+
     }
 
     @Override
